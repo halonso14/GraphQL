@@ -1,0 +1,19 @@
+type Movie {
+    _id: ID!
+    title: String!
+    actor: [Person!]!
+}
+
+input movieInput {
+    title: String!
+    actor: [ID]!
+}
+
+query {
+    movie(keyword: String):[Movie]
+    movies(actor: String): [Movie!]
+}
+
+mutation {
+    addMovie(input: movieInput): Movie
+}

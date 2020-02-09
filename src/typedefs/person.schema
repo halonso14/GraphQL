@@ -1,0 +1,20 @@
+type Person {
+    _id: ID!
+    firstName: String!
+    lastName: String
+    inMovie:[Movie]
+}
+
+input personInput {
+    fisrtName: String!
+    lastName: String
+    inMovie: [String]
+}
+
+query {
+    person(keyword: String):[Person]
+}
+
+mutation {
+    addPerson(input: personInput): Person
+}
