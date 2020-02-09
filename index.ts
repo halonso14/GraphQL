@@ -1,0 +1,1 @@
+// https://github.com/MoonHighway/learning-graphql/blob/master/chapter-05/photo-share-api/resolvers/Type.js
